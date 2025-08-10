@@ -110,7 +110,7 @@ function App() {
 
             {/* City search section */}
             <div className='d-flex align-items-center pb-1'>
-              <input onChange={(e) => setCity(e.target.value)} type="text" className='form-control border-0' style={{ borderRadius: '35px', backgroundColor: 'rgba(0, 11, 34, 0.12)', outline: 'none', border: 'none', boxShadow: 'none', color: 'white' }} />
+              <input onChange={(e) => setCity(e.target.value.trim())} type="text" className='form-control border-0' style={{ borderRadius: '35px', backgroundColor: 'rgba(0, 11, 34, 0.12)', outline: 'none', border: 'none', boxShadow: 'none', color: 'white' }} />
               <button onClick={handleSearch} className='border-0 bg-transparent searchbtn'><i className="fa-solid fa-magnifying-glass fa-sm text-light" style={{ marginLeft: '-32px' }}></i></button>
             </div>
 
